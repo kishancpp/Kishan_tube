@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOMALTUBE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .header {
+            background-color: #ff4757;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .main-video {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .main-video video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .video-container {
+            background: #ff6b81;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, background 0.3s;
+            cursor: pointer;
+        }
+        .video-container:hover {
+            transform: scale(1.05);
+            background: #ff4757;
+        }
+        .video-container video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .video-title {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>KOMALTUBE</h1>
+    </div>
+    <div class="main-video" id="mainVideoContainer">
+        <video id="mainVideo" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-title" id="mainVideoTitle">Video 1</div>
+    </div>
+    <div class="container">
+        <div class="video-grid">
+            <div class="video-container" onclick="playVideo('https://www.w3schools.com/html/mov_bbb.mp4', 'Video 1')">
+                <video>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video 1</div>
+            </div>
+            <div class="video-container" onclick="playVideo('https://www.w3schools.com/html/movie.mp4', 'Video 2')">
+                <video>
+                    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video 2</div>
+            </div>
+            <div class="video-container" onclick="playVideo('https://www.w3schools.com/html/mov_bbb.mp4', 'Video 3')">
+                <video>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video 3</div>
+            </div>
+            <div class="video-container" onclick="playVideo('https://www.w3schools.com/html/movie.mp4', 'Video 4')">
+                <video>
+                    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video 4</div>
+            </div>
+            <div class="video-container" onclick="playVideo('https://www.w3schools.com/html/mov_bbb.mp4', 'Video 5')">
+                <video>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video 5</div>
+            </div>
+            <div class="video-container" onclick="playVideo('https://www.w3schools.com/html/movie.mp4', 'Video 6')">
+                <video>
+                    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video 6</div>
+            </div>
+            <div class="video-container" onclick="playVideo('https://www.w3schools.com/html/mov_bbb.mp4', 'Video 7')">
+                <video>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video 7</div>
+            </div>
+            <div class="video-container" onclick="playVideo('https://www.w3schools.com/html/movie.mp4', 'Video 8')">
+                <video>
+                    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video 8</div>
+            </div>
+            <div class="video-container" onclick="playVideo('https://www.w3schools.com/html/mov_bbb.mp4', 'Video 9')">
+                <video>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video 9</div>
+            </div>
+            <div class="video-container" onclick="playVideo('https://www.w3schools.com/html/movie.mp4', 'Video 10')">
+                <video>
+                    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video 10</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function playVideo(src, title) {
+            const mainVideo = document.getElementById('mainVideo');
+            const mainVideoTitle = document.getElementById('mainVideoTitle');
+            mainVideo.src = src;
+            mainVideoTitle.textContent = title;
+            mainVideo.play();
+        }
+    </script>
+</body>
+</html>
